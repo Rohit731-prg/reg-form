@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Regestration Form</title>
   </head>
   <body>
@@ -12,15 +13,23 @@
       <form>
         <div class="inputs">
           <h4>Full Name</h4>
-          <input placeholder="Full Name" type="text" id="name" required/><span></span>
+          <input placeholder="Full Name" type="text" id="name" required/><span id="sms-name"></span>
           <h4>Phone Number</h4>
-          <input placeholder="Phone Number" id="phone" type="text" required/><span></span>
+          <input placeholder="Phone Number" id="phone" type="text" required/><span id="sms-number"></span>
           <h4>Email ID</h4>
-          <input placeholder="Email ID" type="text" required /><span></span>
+          <input id="email" placeholder="Email ID" type="email" required /><span id="sms-email"></span>
           <h4>Password</h4>
-          <input placeholder="Password" type="password" required /><span></span>
+          <div class="pass-box">
+            <input id="password" placeholder="Password" type="password" required />
+            <button id="eyeOne"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <span id="sms-password"></span>
           <h4>Confirm Password</h4>
-          <input placeholder="Confirm Password" type="password"  required/><span></span>
+          <div class="pass-box">
+            <input id="con-password" placeholder="Confirm Password" type="password"  required/>
+            <button id="eyeTwo"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <span id="sms-con-password"></span>
         </div>
         <button class="btn">Registration</button>
       </form>

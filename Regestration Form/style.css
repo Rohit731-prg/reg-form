@@ -59,3 +59,22 @@ h4 {
     font-size: 25px;
     margin-top: 20px;
 }
+.pass-box {
+    position: relative;
+    border: 1px solid black;
+}
+#con-password,
+#password {
+    border: none;
+
+}
+.pass-box button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
