@@ -4,8 +4,8 @@ const conPass = document.getElementById('sms-con-password');
 const EyeOne = document.getElementById('eyeOne');
 const EyeTwo = document.getElementById('eyeTwo');
 
-document.querySelector('.btn').addEventListener('click', (event) => {
-    event.preventDefault();
+document.querySelector('.btn').addEventListener('click', (e) => {
+    e.preventDefault();
 
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
@@ -13,7 +13,7 @@ document.querySelector('.btn').addEventListener('click', (event) => {
     const password = document.getElementById('password').value;
     const conPassword = document.getElementById('con-password').value;
 
-    const validEmailForm = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9.-]+\.)?(edu\.in|ac\.in|org\.in)$/; // Regex to match multiple domains
+    const validEmailForm = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9.-]+\.)?(edu\.in|ac\.in|org\.in)$/;
 
     if (name !== '' && phone !== '' && email !== '') {
         if (name.length < 15 && phone.length === 10) {
@@ -55,12 +55,12 @@ function togglePasswordVisibility(eyeElement, targetInputId) {
     }
 }
 
-EyeOne.addEventListener('click', (event) => {
-    event.preventDefault();
+EyeOne.addEventListener('click', (e) => {
+    e.preventDefault();
     togglePasswordVisibility(EyeOne, 'password');
 });
 
-EyeTwo.addEventListener('click', (event) => {
-    event.preventDefault();
+EyeTwo.addEventListener('click', (e) => {
+    e.preventDefault();
     togglePasswordVisibility(EyeTwo, 'con-password');
 });
